@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo tunctl
+sudo ifconfig tap1 up
+sudo brctl addif virbr0 eth1
+sudo brctl addif virbr0 tap1
+brctl show
+

@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo qemu-system-arm -kernel kernel-qemu-4.4.13-jessie -cpu arm1176 -m 256 -M versatilepb -no-reboot -serial stdio -append "root=/dev/sda2 rootfstype=ext4 rw" -drive file=2016-05-27-raspbian-jessie.img,format=raw -net nic,macaddr=00:16:3e:00:00:01 -net tap,ifname=tap1,script=no,downscript=no

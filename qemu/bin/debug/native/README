@@ -1,0 +1,4 @@
+To build, from this folder:
+../../../configure
+make
+sudo make install
